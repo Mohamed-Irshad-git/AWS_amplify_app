@@ -1,0 +1,24 @@
+{
+  "query": "subscription OnDeleteBlogOwner {
+  onDeleteBlogOwner {
+    __typename
+    _deleted
+    _lastChangedAt
+    _version
+    blog {
+      items {
+        id
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    id
+    name
+    updatedAt
+    wea
+  }
+}
+",
+  "variables": null
+}

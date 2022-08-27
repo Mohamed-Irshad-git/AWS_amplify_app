@@ -1,0 +1,50 @@
+{
+  "query": "query SyncBlogOwners($filter: ModelBlogOwnerFilterInput) {
+  syncBlogOwners(filter: $filter) {
+    items {
+      __typename
+      _deleted
+      _lastChangedAt
+      _version
+      blog {
+        items {
+          __typename
+          _deleted
+          _lastChangedAt
+          _version
+          createdAt
+          id
+          name
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      createdAt
+      id
+      name
+      updatedAt
+      wea
+    }
+    nextToken
+    startedAt
+  }
+}
+",
+  "variables": {
+    "filter": {
+        "and": [
+            {
+                "id": {
+                    "eq" : "426f8e8d-ea0f-4839-a73f-6a2a38565ba1"
+                }
+            },
+            {
+                "name": {
+                    "eq" : "Spaghetti"
+                }
+            }
+        ]
+    }
+  }
+}

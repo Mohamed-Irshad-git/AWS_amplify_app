@@ -1,0 +1,26 @@
+{
+  "query": "subscription OnCreateBlog {
+  onCreateBlog {
+    __typename
+    _deleted
+    _lastChangedAt
+    _version
+    createdAt
+    id
+    name
+    owner {
+      id
+    }
+    posts {
+      items {
+        id
+      }
+      nextToken
+      startedAt
+    }
+    updatedAt
+  }
+}
+",
+  "variables": null
+}

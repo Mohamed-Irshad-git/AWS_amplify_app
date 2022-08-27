@@ -1,0 +1,35 @@
+{
+  "query": "query SyncBlogOwners {
+  syncBlogOwners {
+    items {
+      __typename
+      _deleted
+      _lastChangedAt
+      _version
+      blog {
+        items {
+          __typename
+          _deleted
+          _lastChangedAt
+          _version
+          createdAt
+          id
+          name
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      createdAt
+      id
+      name
+      updatedAt
+      wea
+    }
+    nextToken
+    startedAt
+  }
+}
+",
+  "variables": null
+}

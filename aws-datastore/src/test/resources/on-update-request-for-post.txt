@@ -1,0 +1,31 @@
+{
+  "query": "subscription OnUpdatePost {
+  onUpdatePost {
+    __typename
+    _deleted
+    _lastChangedAt
+    _version
+    author {
+      id
+    }
+    blog {
+      id
+    }
+    comments {
+      items {
+        id
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    id
+    rating
+    status
+    title
+    updatedAt
+  }
+}
+",
+  "variables": null
+}

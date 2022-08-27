@@ -1,0 +1,43 @@
+{
+  "query": "query SyncParents {
+  syncParents {
+    items {
+      __typename
+      _deleted
+      _lastChangedAt
+      _version
+      address {
+        city
+        country
+        phonenumber {
+          carrier
+          code
+          number
+        }
+        street
+        street2
+      }
+      children {
+        address {
+          city
+          country
+          phonenumber {
+            carrier
+            code
+            number
+          }
+          street
+          street2
+        }
+        name
+      }
+      id
+      name
+    }
+    nextToken
+    startedAt
+  }
+}
+",
+  "variables": null
+}
